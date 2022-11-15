@@ -1,0 +1,34 @@
+name: Generate Pages
+
+on:
+    push:
+        branches: [ "master" ]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+
+            - name: Get mdbook
+              uses: extractions/setup-crate@v1
+              with:
+                    owner: rust-lang
+                    name: mdBook
+
+            - name: Build book
+              run: mdbook build
+
+            - name: Create pages artifact
+              uses: actions/upload-pages-artifact@1.0.4
+              with:
+                path: "./book"
+                retention-days: "14"
+    
+    deploy:
+        needs: build
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/deploy-pages@v1
+
+
