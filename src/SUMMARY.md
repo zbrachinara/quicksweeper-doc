@@ -5,9 +5,9 @@
 # Mechanics
 
 - [Players](./player.md)
-- [Mine](./mine.md)
 - [Board shape](./board.md)
 - [Board effects](./effects.md)
+- [Gamemodes](./gamemodes.md)
 
 # Art
 
