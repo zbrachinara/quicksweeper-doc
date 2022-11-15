@@ -13,11 +13,13 @@ The immutable events are:
 
 Some examples of mutable events include [TODO]
 
-Similarly, Each player has access to one set of controls. These are:
+Similarly, Each player has access to one set of transient controls. These are:
 
 * **Directional controls**: The ability to modify their position
 * **Check cell**: The ability to reveal cells
 * **Flag cell**: The ability to flag cells.
+
+And specific controls may be added based on gamemode.
 
 ### Property deltas and client/server
 
