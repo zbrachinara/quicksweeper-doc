@@ -11,7 +11,7 @@ The transient events are:
 * Position: The last known position the cursor takes
 * Board state: The state of the board the player knows.
 
-Some examples of mutable events include [TODO]
+Some examples of specific events include [TODO]
 
 Similarly, Each player has access to one set of transient controls. These are:
 
