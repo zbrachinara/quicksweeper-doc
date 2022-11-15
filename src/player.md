@@ -6,7 +6,7 @@ A player is an entity with properties, which can either be transient or specific
 properties apply to the player no matter the gamemode, while specific properties are properties
 which are added by the gamemode.
 
-The immutable events are:
+The transient events are:
 
 * Position: The last known position the cursor takes
 * Board state: The state of the board the player knows.
