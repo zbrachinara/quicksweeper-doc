@@ -30,6 +30,6 @@ deltas. A property delta is a description of the changes to properties in the ti
 
 ## Plexing
 
-Multiple players can be plexed into one game over network or on a single machine by controls,
-although some gamemodes may be limited to network only to hide information relevant to the game
-mode.
+Multiple players can be plexed into one game over network or on a single machine by individual sets
+of controllers, although some gamemodes may be limited to network only to hide information relevant
+to the game mode.
