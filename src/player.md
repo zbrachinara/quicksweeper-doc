@@ -1,5 +1,8 @@
 # Players
 
+The player is the primary entity manipulated by the user. Conceptually it represents the cell of
+interest on the screen which the user wants to mark flagged or reveal. 
+
 ## Properties
 
 A player is an entity with properties, which can either be transient or specific. Transient
