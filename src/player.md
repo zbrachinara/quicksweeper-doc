@@ -24,9 +24,9 @@ And specific controls may be added based on gamemode.
 ### Property deltas and client/server
 
 Gameplay, from an implementation perspective, is the process of keeping the state between client and
-server, and on the serverside client states with each other, consistent. In order to do this, a
-client will regularly send events to the server that contain property deltas. A property delta is a
-description of the modifications done to properties in the time between events. 
+server, and on the serverside client states with each other, consistent. In order to do this, the
+client and server, when an "event" occurs, will send messages to each other that contain property
+deltas. A property delta is a description of the changes to properties in the time between messages. 
 
 ## Plexing
 
