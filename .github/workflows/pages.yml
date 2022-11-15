@@ -20,7 +20,7 @@ jobs:
               run: mdbook build
 
             - name: Create pages artifact
-              uses: actions/upload-pages-artifact@1
+              uses: actions/upload-pages-artifact@v1.0.4
               with:
                 path: "./book"
                 retention-days: "14"
