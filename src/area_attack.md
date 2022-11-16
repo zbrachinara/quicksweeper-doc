@@ -4,9 +4,9 @@
 
 ## Area
 
-A player's area is defined as the region of the board encompassing the cells which the player has
-uncovered. The state of a cell contained in a player's area is not visible to opponents, except for
-that the cell is owned in that area. 
+A player's area is defined as the region of the board *only* containing the cells which the player
+has uncovered. The area is not necessarily contiguous. The state of a cell contained in a player's
+area is not visible to opponents, except for that the cell is owned in that area. 
 
 ## Penalty
 
