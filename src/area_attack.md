@@ -16,13 +16,6 @@ allow for more variation in starting positions). When all players have selected 
 starting position, a board will be generated in such a way that the players do not have areas which
 share borders. After this stage, the game will have begun.
 
-## Penalty
-
-When a player uncovers a mine, they are penalized by being frozen for some time. In this time, the
-player is not given any new information about the board and not allowed to execute any new actions.
-On the other hand, opponents will be able to see that the player is frozen. After the player is
-unfrozen, the mine will be revealed on the board.
-
 ## Stages
 
 The game runs on a timer which determines when the game ends and what stage the game is in.
@@ -31,9 +24,13 @@ To accomodate for different skill levels, however, the total amount of area clai
 as a trigger for stage transitions.  While the game will end no matter what when the timer runs out,
 the game can also end before if the entire board is clear. 
 
-### Stage 1: No new mechanics
+### Stage 1: Default mechanics
 
-In this stage, everything plays as described above.
+Players begin to claim area anywhere across the board. When a player uncovers a mine, they are
+penalized by being frozen for some time. In this time, the player is not given any new information
+about the board and not allowed to execute any new actions.  On the other hand, opponents will be
+able to see that the player is frozen. After the player is unfrozen, the mine will be revealed
+on the board, and for the rest of the game it will not be allowed to be revealed.
 
 ### Stage 2: Attack (after 3 minutes)
 
@@ -41,3 +38,8 @@ In this stage, uncovering a mine will incur an additional penalty: A region of c
 will be regenerated and become unclaimed, allowing for anyone (except, for a time, the person who
 was frozen from uncovering the mine) to attempt to claim it. This mechanic can further penalize
 mistakes, but, as the name of the stage suggests, it is mostly there for attack.
+
+### Stage 3: Lock (after 6 minutes)
+
+All previous effects apply, but now only cells that are adjacent to the player's area can be
+uncovered by that player.
