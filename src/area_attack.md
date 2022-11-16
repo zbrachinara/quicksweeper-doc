@@ -38,6 +38,6 @@ In this stage, everything plays as described above.
 ### Stage 2: Attack (after 3 minutes)
 
 In this stage, uncovering a mine will incur an additional penalty: A region of cells around the mine
-will be ungenerated and become unclaimed, allowing for anyone (except, for a time, the person who
+will be regenerated and become unclaimed, allowing for anyone (except, for a time, the person who
 was frozen from uncovering the mine) to attempt to claim it. This mechanic can further penalize
 mistakes, but, as the name of the stage suggests, it is mostly there for attack.
