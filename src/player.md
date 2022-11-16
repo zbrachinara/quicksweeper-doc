@@ -5,18 +5,18 @@ interest on the screen which the user wants to mark flagged or reveal.
 
 ## Properties
 
-A player is an entity with properties, which can either be transient or specific. Transient
-properties apply to the player no matter the gamemode, while specific properties are properties
-which are added by the gamemode.
+A player is an entity with properties, which can either be global or specific. global properties
+apply to the player no matter the gamemode, while specific properties are properties which are added
+by the gamemode.
 
-The transient events are:
+The global events are:
 
 * Position: The last known position the cursor takes
 * Board state*: The state of the board the player knows.
 
 Some examples of specific events include [TODO]
 
-Similarly, Each player has access to one set of transient controls. These are:
+Similarly, Each player has access to one set of global controls. These are:
 
 * **Directional controls**: The ability to modify their position
 * **Check cell**: The ability to reveal cells
