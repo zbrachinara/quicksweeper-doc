@@ -15,4 +15,4 @@
 # Art
 
 - [Style guide](./style.md)
-- [Sprite gallery](./gallery.md)
+- [Model gallery](./gallery.md)
