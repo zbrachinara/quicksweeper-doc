@@ -30,7 +30,8 @@ include it here. </sub>
 Gameplay, from an implementation perspective, is the process of keeping the state between client and
 server, and on the serverside client states with each other, consistent. In order to do this, the
 client and server will send messages to each other on their respective events that contain property
-deltas. A property delta is a description of the changes to properties in the time between messages. 
+deltas. A property delta is a description of the changes to all the properties the client has access
+to in the time between messages. 
 
 ## Plexing
 
