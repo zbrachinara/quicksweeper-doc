@@ -1,24 +1,22 @@
 # Players
 
-The player is the primary entity manipulated by the user. Conceptually it represents the cell of
-interest on the screen which the user wants to mark flagged or reveal. 
-
 ## Properties
 
-A player is an entity with properties, which can either be global or specific. global properties
-apply to the player no matter the gamemode, while specific properties are properties which are added
-by the gamemode.
+A player has an entity with properties, which can either be global or specific. global properties
+apply to the player no matter the [gamemode](./gamemodes.md), while specific properties are
+properties which are added by the gamemode.
 
-The global events are:
+The global properties are:
 
-* Position: The last known position the cursor takes
-* Board state*: The state of the board the player knows.
+* Position: The last known position the system cursor hovered over. Indicated by a crosshair on the
+  board.
+* Board state<sup>*</sup>: The state of the board the player knows.
 
 Some examples of specific events include [TODO]
 
-Similarly, Each player has access to one set of global controls. These are:
+Similarly, each player has access to one set of global controls. These are:
 
-* **Directional controls**: The ability to modify their position
+* **Translational controls**: The ability to modify their position
 * **Check cell**: The ability to reveal cells
 * **Flag cell**: The ability to flag cells.
 
@@ -31,7 +29,7 @@ include it here. </sub>
 
 Gameplay, from an implementation perspective, is the process of keeping the state between client and
 server, and on the serverside client states with each other, consistent. In order to do this, the
-client and server, when an "event" occurs, will send messages to each other that contain property
+client and server will send messages to each other on their respective events that contain property
 deltas. A property delta is a description of the changes to properties in the time between messages. 
 
 ## Plexing

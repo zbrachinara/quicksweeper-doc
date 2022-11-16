@@ -1,7 +1,7 @@
 # Board shape
 
-The board will be a square grid, each grid space containing a cell. A player can move freely across
-the board by navigating using the cursor across it.
+The board will be a rectangularly tiled grid, each grid space containing a cell. A player can move
+freely within the bounds of the board.
 
 The board may extend across the screen regions 
 
