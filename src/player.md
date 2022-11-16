@@ -12,7 +12,7 @@ which are added by the gamemode.
 The transient events are:
 
 * Position: The last known position the cursor takes
-* Board state: The state of the board the player knows.
+* Board state*: The state of the board the player knows.
 
 Some examples of specific events include [TODO]
 
@@ -23,6 +23,9 @@ Similarly, Each player has access to one set of transient controls. These are:
 * **Flag cell**: The ability to flag cells.
 
 And specific controls may be added based on gamemode.
+
+<sub> *The board state can have specific properties, but it itself is required in every game, so we
+include it here. </sub>
 
 ### Property deltas and client/server
 
