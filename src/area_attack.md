@@ -34,12 +34,12 @@ on the board, and for the rest of the game it will not be allowed to be revealed
 
 ### Stage 2: Attack (after 3 minutes)
 
-In this stage, uncovering a mine will incur an additional penalty: A region of cells around the mine
-will be regenerated and become unclaimed, allowing for anyone (except, for a time, the person who
-was frozen from uncovering the mine) to attempt to claim it. This mechanic can further penalize
-mistakes, but, as the name of the stage suggests, it is mostly there for attack.
+In this stage, uncovering a mine will incur an different penalty: A region of cells around the mine
+will be regenerated and become unclaimed, allowing for anyone to attempt claiming it. This mechanic
+can further penalize mistakes, but, as the name of the stage suggests, it is mostly there for
+attack. Lack of freezing should encourage the use of this mechanic as well
 
-### Stage 3: Lock (after 6 minutes)
+### Stage 3: The final stage: Lock (after 6 minutes)
 
 All previous effects apply, but now only cells that are adjacent to the player's area can be
 uncovered by that player.
