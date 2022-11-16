@@ -1,6 +1,6 @@
 # Area attack
 
-2-4 players compete to claim the most area on a single board. 
+2-4 players compete in a timed match to claim the most area on a single board. 
 
 ## Area
 
@@ -23,13 +23,21 @@ player is not given any new information about the board and not allowed to execu
 On the other hand, opponents will be able to see that the player is frozen. After the player is
 unfrozen, the mine will be revealed on the board.
 
-## Time
+## Stages
 
 The game runs on a timer which determines when the game ends and what stage the game is in.
 Different stages will determine different board effects, which influence the strategy of the game.
-While the game will end no matter what when the timer runs out, the game can also end before this if
-the entire board is clear. 
+To accomodate for different skill levels, however, the total amount of area claimed should also act
+as a trigger for stage transitions.  While the game will end no matter what when the timer runs out,
+the game can also end before if the entire board is clear. 
 
-Relevant stages:
+### Stage 1: No new mechanics
 
-* [TODO]
+In this stage, everything plays as described above.
+
+### Stage 2: Attack (after 3 minutes)
+
+In this stage, uncovering a mine will incur an additional penalty: A region of cells around the mine
+will be ungenerated and become unclaimed, allowing for anyone (except, for a time, the person who
+was frozen from uncovering the mine) to attempt to claim it. This mechanic can further penalize
+mistakes, but, as the name of the stage suggests, it is mostly there for attack.
