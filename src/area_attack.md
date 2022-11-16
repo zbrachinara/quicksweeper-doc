@@ -26,18 +26,19 @@ the game can also end before if the entire board is clear.
 
 ### Stage 1: Default mechanics
 
-Players begin to claim area anywhere across the board. When a player uncovers a mine, they are
-penalized by being frozen for some time. In this time, the player is not given any new information
-about the board and not allowed to execute any new actions.  On the other hand, opponents will be
-able to see that the player is frozen. After the player is unfrozen, the mine will be revealed
-on the board, and for the rest of the game it will not be allowed to be revealed.
+Players claim area anywhere on the board. When a player uncovers a mine, they are penalized by being
+frozen for some time. In this time, the player is not given any new information about the board and
+not allowed to execute any new actions.  On the other hand, opponents will be able to see that the
+player is frozen. After the player is unfrozen, the mine will be revealed on the board, and for the
+rest of the game it will not be allowed to be revealed.
 
 ### Stage 2: Attack (after 3 minutes)
 
 In this stage, uncovering a mine will incur an different penalty: A region of cells around the mine
 will be regenerated and become unclaimed, allowing for anyone to attempt claiming it. This mechanic
 can further penalize mistakes, but, as the name of the stage suggests, it is mostly there for
-attack. Lack of freezing should encourage the use of this mechanic as well
+attack. Lack of freezing should encourage the use of this mechanic as well. As with the previous
+effect, a revealed mine will be displayed and not allowed to be checked again.
 
 ### Stage 3: The final stage: Lock (after 6 minutes)
 
