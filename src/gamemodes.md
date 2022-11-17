@@ -26,7 +26,7 @@ all boards have been created wins
 
 * **Free play**
 
-A large (potentially unbounded) board is hosted on a central server. Like a 2015 .io game, players
-are free to join and leave the board and play a game similar to [area attack](./area_attack.md).
-There are some notable exceptions to this rule, however, such as that when someone's area gets
-surrounded, their game ends, and their area becomes unclaimed and reset.
+A large (potentially unbounded) board is hosted on a central server. Like slither.io or agar.io,
+players are free to join and leave the board and play a game similar to [area
+attack](./area_attack.md). There are some notable exceptions to this rule, however, such as that
+when someone's area gets surrounded, their game ends, and their area becomes unclaimed and reset.
