@@ -7,22 +7,22 @@ include time and combo score.
 
 * [**Area attack**](./area_attack.md)
 
-Multiple players clear mines on the same board, claiming all areas they themselves have cleared.
-Dying penalizes the players for a short time, and the game ends either on a timer or when the board
-is clear. Players are then ranked based on the amount of cells cleared.
+Multiple players clear mines on the same board, claiming all areas they clear. Hitting a mine
+penalizes players without elimination, and the game ends either on a timer or when the board is
+clear. Players are then ranked based on the amount of cells cleared.
 
 * [**Score attack**](./score_attack.md)
 
-Two players on separate boards play against each other to gain the best score. When a player fails
-too many times, the game ends for them and they must wait until the other player finishes in order
-to have their scores compared. The player with the greatest score wins.
+Two players on separate boards play against each earn score. When a player fails too many times, the
+game ends for them and they must wait until the other player finishes. The player with the highest
+score wins.
 
 ## Experimental: Not in version 1
 
 * **Unnamed 1**
 
 For each player, the board is created by an opponent, and the quickest player to finish after
-all boards have been created wins
+all boards have been created wins.
 
 * **Free play**
 
