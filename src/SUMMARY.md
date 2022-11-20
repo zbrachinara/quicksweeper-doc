@@ -6,7 +6,6 @@
 
 - [Players](./player.md)
 - [Board shape](./board.md)
-- [Board effects](./effects.md)
 - [Scoring](./scoring.md)
 - [Gamemodes](./gamemodes.md)
     - [Classic singleplayer](./singleplayer.md)
