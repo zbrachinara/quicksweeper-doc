@@ -17,12 +17,12 @@ Two players on separate boards play against each earn score. When a player fails
 game ends for them and they must wait until the other player finishes. The player with the highest
 score wins.
 
-## Experimental: Not in version 1
+## Experimental (not in version 1):
 
-* **Unnamed 1**
+* **Enemy setup**
 
-For each player, the board is created by an opponent, and the quickest player to finish after
-all boards have been created wins.
+Each player determines the placement of mines for the board of one other player. Once all the
+boards are set, the game starts. The player that finishes soonest wins.
 
 * **Free play**
 
