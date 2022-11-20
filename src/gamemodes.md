@@ -42,4 +42,3 @@ There are a (potentially reduced) number of mines that periodically move collect
 cells will have their numbers changed accordingly. No mine will move to an uncovered or flagged
 cell, nor to a cell directly adjacent to an uncovered cell. A flagged mine won't move. Flag all
 mines to win.
-will move to an uncovered or flagged cell.
