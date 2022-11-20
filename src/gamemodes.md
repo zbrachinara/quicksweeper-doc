@@ -35,3 +35,10 @@ when someone's area gets surrounded, their game ends, and their area becomes unc
 
 Cells with mines can be weighted variably, so that even if one cell has one neighboring cell
 containing mines, it may contain multiple mines.
+
+* **Tunneling mines (or: whack-a-mine)**
+
+There are a (potentially reduced) number of mines that periodically move collectively. Uncovered
+cells will have their numbers changed accordingly. No mine will move to an uncovered or flagged
+cell, nor to a cell directly adjacent to an uncovered cell. A flagged mine won't move. Flag all
+mines to win.
