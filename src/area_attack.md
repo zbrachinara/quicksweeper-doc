@@ -40,7 +40,9 @@ can further penalize mistakes, but, as the name of the stage suggests, it is mos
 attack. Lack of freezing should encourage the use of this mechanic as well. As with the previous
 effect, a revealed mine will be displayed and not allowed to be checked again.
 
+In addition, players will no longer be able to clear mines everywhere, instead only being able to
+clear cells that are adjacent to the player's area.
+
 ### Stage 3: The final stage: Lock (after 6 minutes)
 
-All previous effects apply, but now only cells that are adjacent to the player's area can be
-uncovered by that player.
+All previous effects apply, and after a minute the game ends and placement is determined. 
