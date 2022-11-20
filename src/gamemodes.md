@@ -30,3 +30,8 @@ A large (potentially unbounded) board is hosted on a central server. Like slithe
 players are free to join and leave the board and play a game similar to [area
 attack](./area_attack.md). There are some notable exceptions to this rule, however, such as that
 when someone's area gets surrounded, their game ends, and their area becomes unclaimed and reset.
+
+* **Stacked mines**
+
+Cells with mines can be weighted variably, so that even if one cell has one neighboring cell
+containing mines, it may contain multiple mines.
