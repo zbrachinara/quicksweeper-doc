@@ -37,8 +37,7 @@ for the rest of the game it will not be allowed to be revealed.
 In this stage, uncovering a mine will incur an different penalty: A region of cells around the mine
 will be regenerated and become unclaimed, allowing for anyone to attempt claiming it. This mechanic
 can further penalize mistakes, but, as the name of the stage suggests, it is mostly there for
-attack. Lack of freezing should encourage the use of this mechanic as well. As with the previous
-effect, a revealed mine will be displayed and not allowed to be checked again.
+attack. Lack of freezing should encourage the use of this mechanic as well.
 
 In addition, players will no longer be able to clear mines everywhere, instead only being able to
 clear cells that are adjacent to the player's area.
