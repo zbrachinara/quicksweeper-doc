@@ -2,6 +2,8 @@
 
 - [Outline](./chapter_1.md)
 
+- [Communication](./communication.md)
+
 # Mechanics
 
 - [Players](./player.md)
