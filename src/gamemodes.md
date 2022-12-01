@@ -29,7 +29,7 @@ boards are set, the game starts. The player that finishes soonest wins.
 A large (potentially unbounded) board is hosted on a central server. Like slither.io or agar.io,
 players are free to join and leave the board and play a game similar to [area
 attack](./area_attack.md). There are some notable exceptions to this rule, however, such as that
-when a player selects a single mine, their game ends, and their area becomes unclaimed and reset. Players also lose for not making enough progress in a certian amount of time, to encourage fast, exciting play and prevent the game from being clogged up with players who have nothing to do but don't want to lose.
+when a player selects a single mine, their game ends, and their area becomes unclaimed and reset. Players also lose for not making enough progress in a certain amount of time, to encourage fast, exciting play and prevent the game from being clogged up with players who have nothing to do but don't want to lose.
 
 
 * **Stacked mines**
@@ -37,9 +37,18 @@ when a player selects a single mine, their game ends, and their area becomes unc
 Cells with mines can be weighted variably, so that even if one cell has one neighboring cell
 containing mines, it may contain multiple mines.
 
+* **Continuous Mines**
+The board is a subset of R^2 instead of Z^2. Mines are disks of radius 1. Mines either can't overlap, or can (stacked mines). Guesses are points. Guessing inside of a mine is a loss. For guesses outside of a mine, the total area of mines enclosed in the disk of radius 1 surrounding the point is returned.
+
 * **Tunneling mines (or: whack-a-mine)**
 
 There are a (potentially reduced) number of mines that periodically move collectively. Uncovered
 cells will have their numbers changed accordingly. No mine will move to an uncovered or flagged
 cell, nor to a cell directly adjacent to an uncovered cell. A flagged mine won't move. Flag all
 mines to win.
+
+* **3D**
+The board has three (or more dimensions)
+
+* **Arbitrary graph**
+Mines are placed at vertices of a graph. Guesses are vertices. Guessing a mine results in a loss. Guessing a non-mine reveals the number of mines connected to that vertex.
