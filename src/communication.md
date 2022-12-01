@@ -28,6 +28,15 @@ Messages passed from the server to the client takes one of these forms:
     - buffer of UUIDs
 - Malformed (to signify bad or out of context client message)
 Also data directly from the game? (should be most messages)
+## Join process
+The server listens for connections, which are placed in a pool of waiting connections.
+The server waits for data from connections, which must specify their message protocol (for example, send the websocket handshake). The server uses this information to create players with these connections, which are added ot the pool of waiting players.
+
+The server waits for greet messages from these players. If a proper greet message is received, the player gains an identity, and is moved to the waiting room. Players in the waiting room can send create, join, games, and gameTypes messages. A join message moves a player to a game.
+
+While in a game, players can send Ingame or ForceLeave messages. ForceLeave messages return players to the waiting room.
+
+We might want to add an option for users to reconnect after losing connection.
 ## Serialization
 All communication is on top of TCP. The next layer above TCP is the message protocol - a way of separating the data stream into individual messages between client and server. There are multiple ways this can be done. I think we should implement the first two.
 
