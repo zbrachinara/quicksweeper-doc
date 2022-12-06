@@ -6,17 +6,17 @@ Messages passed from the client to the server takes one of these forms:
 
 - Greet
     - username: String
-- Create
+- Create (c)
     - gamemode (specified by UUID)
     - parameters: data buffer
-- Join
+- Join (j)
     - game: Game ID (number)
-- Ingame
+- Ingame (n)
     - data buffer
-- ForceLeave
-- Games (request list of games active on the server)
-- GameTypes (request types of games available on the server)
-- GameInfo (get information about a game)
+- ForceLeave (l)
+- Games (g) (request list of games active on the server)
+- GameTypes (t) (request types of games available on the server)
+- GameInfo (i) (get information about a game)
     - game ID (or name?)
 Messages passed from the server to the client takes one of these forms:
 
