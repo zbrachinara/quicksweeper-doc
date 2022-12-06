@@ -16,7 +16,8 @@ Messages passed from the client to the server takes one of these forms:
 - ForceLeave
 - Games (request list of games active on the server)
 - GameTypes (request types of games available on the server)
-
+- GameInfo (get information about a game)
+    - game ID (or name?)
 Messages passed from the server to the client takes one of these forms:
 
 - ActiveGames (responds to client sending Games)
