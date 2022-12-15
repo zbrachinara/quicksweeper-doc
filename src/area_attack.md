@@ -22,6 +22,8 @@ Messages from client to server:
 x and y are the coordinates of the square that the player is revealing, as base-10 strings. \n is a newline. For example: "10\n9"
 
 Messages from server to client:
+When a player joins, they are given an initial message with the parameters of the game. This message is "multiplayer minesweeper\nb\np", where b is the boardsize as a base-10 integer, and p is the probability that a square is a mine.
+All subsequent messages have the following form:
 "x\ny\nbd"
 x and y are coordinates in base 10, representing the location of the event. "\n" is the newline character. b is a one-byte code indicating the type of event. d is the data associated with the event.
 
@@ -39,6 +41,9 @@ codes:
 'f':
     A player has been frozen by a mine at position (x,y).
     d: the name of the player. Could be yourself.
+'m':
+    A message directly to the user - for example, if they try to make a selection while frozen.
+    d: the message
 ## Stages
 
 The game runs on a timer which determines when the game ends and what stage the game is in.
