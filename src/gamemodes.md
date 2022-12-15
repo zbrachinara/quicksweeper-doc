@@ -11,6 +11,7 @@ Multiple players clear mines on the same board, claiming all areas they clear. H
 penalizes players without elimination, and the game ends either on a timer or when the board is
 clear. Players are then ranked based on the amount of cells cleared.
 
+
 * [**Score attack**](./score_attack.md)
 
 Two players on separate boards play against each earn score. When a player fails too many times, the

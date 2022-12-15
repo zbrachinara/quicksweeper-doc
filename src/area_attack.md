@@ -16,6 +16,10 @@ allow for more variation in starting positions). When all players have selected 
 starting position, a board will be generated in such a way that the players do not have areas which
 share borders. After this stage, the game will have begun.
 
+## Communication
+When a player joins, they are sent the names of all other players in the game, and all other players are sent the name of the joined player.
+
+To reveal a tile, the client sends the following message to the server: "x\ny", where x and y are the coordinates of the tile. The server replies with a message "x\ny\nm", where m is the number of mines adjacent to the tile, or "x\ny\nname", where name is the name of another player, if the tile has already been claimed by someone else. This type of message is also sent unprompted by the server to indicate that another player has revealed a tile.
 ## Stages
 
 The game runs on a timer which determines when the game ends and what stage the game is in.
