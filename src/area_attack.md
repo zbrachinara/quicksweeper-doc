@@ -17,9 +17,25 @@ starting position, a board will be generated in such a way that the players do n
 share borders. After this stage, the game will have begun.
 
 ## Communication
-When a player joins, they are sent the names of all other players in the game, and all other players are sent the name of the joined player.
+Messages from client to server:
+"x\ny"
+x and y are the coordinates of the square that the player is revealing, as base-10 strings. \n is a newline. For example: "10\n9"
 
-To reveal a tile, the client sends the following message to the server: "x\ny", where x and y are the coordinates of the tile. The server replies with a message "x\ny\nm", where m is the number of mines adjacent to the tile, or "x\ny\nname", where name is the name of another player, if the tile has already been claimed by someone else. This type of message is also sent unprompted by the server to indicate that another player has revealed a tile.
+Messages from server to client:
+"x\ny\nbd"
+x and y are coordinates in base 10, representing the location of the event. "\n" is the newline character. b is a one-byte code indicating the type of event. d is the data associated with the event.
+
+codes:
+'c':
+    The square at position (x,y) is revealed.
+    d: the number of mines adjacent to the square.
+    This message typically comes as a reply to a guess by the client.
+'o':
+    Another player has claimed the square at (x,y).
+    d: the name of the other player
+'f':
+    A player has been frozen by a mine at position (x,y).
+    d: the name of the player. Could be yourself.
 ## Stages
 
 The game runs on a timer which determines when the game ends and what stage the game is in.
