@@ -26,6 +26,9 @@ Messages from server to client:
 x and y are coordinates in base 10, representing the location of the event. "\n" is the newline character. b is a one-byte code indicating the type of event. d is the data associated with the event.
 
 codes:
+'j':
+    A new player has joined the game. x and y are currently unused.
+    d: player name
 'c':
     The square at position (x,y) is revealed.
     d: the number of mines adjacent to the square.
