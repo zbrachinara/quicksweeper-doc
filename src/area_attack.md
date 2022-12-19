@@ -44,6 +44,10 @@ codes:
 'm':
     A message directly to the user - for example, if they try to make a selection while frozen.
     d: the message
+
+Tentative:
+'s':
+    
 ## Stages
 
 The game runs on a timer which determines when the game ends and what stage the game is in.

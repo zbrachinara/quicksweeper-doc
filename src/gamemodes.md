@@ -33,6 +33,14 @@ attack](./area_attack.md). There are some notable exceptions to this rule, howev
 when a player selects a single mine, their game ends, and their area becomes unclaimed and reset. Players also lose for not making enough progress in a certain amount of time, to encourage fast, exciting play and prevent the game from being clogged up with players who have nothing to do but don't want to lose.
 
 
+* **Capture the Flag**
+Two or more teams each have a flag. The goal of the game is to collect all flags. Play proceeds as in stage 2 of area attack: activating a mine causes neighboring squares to reset. When a flag is in a team's territory, that team may move the flag to a neighboring square. This acts as if a mine was activated. To move the flag again, the team must reclaim the area surrounding the flag.
+
+
+* **Teams**
+
+There are two teams playing on a large board. Each starts on their own side. Players can see the numbers in all squares their team has claimed. Players may select any square adjacent to one of their team's squares. Activating a mine causes neighboring squares to reset, and freezes the player who selected the mine. Each team is trying to claim the entire board for themselves.
+
 * **Stacked mines**
 
 Cells with mines can be weighted variably, so that even if one cell has one neighboring cell
