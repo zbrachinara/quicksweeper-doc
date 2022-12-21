@@ -44,10 +44,9 @@ codes:
 'm':
     A message directly to the user - for example, if they try to make a selection while frozen.
     d: the message
-
-Tentative:
 's':
-    
+    A gamemode-specific state change of the tile at (x,y)
+    d: the nature of the change
 ## Stages
 
 The game runs on a timer which determines when the game ends and what stage the game is in.
