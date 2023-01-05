@@ -30,10 +30,13 @@ Messages passed from the client to the server in the lobby take one of these for
     - game: Game ID (number)
 Once the user joins a game, the following messages are available:
 - Ingame ('\x01')
-    - data buffer
-    - Any starting byte other than 0 or 1 results in an ingame message. For example, 'abc' and '\x01abc' both result in the bytes 'abc' being transmitted to the game. The sole way to communicate a null byte as data to the game is the message '\x01\x00'.
+    - Data specified by game type (see [area_attack.md](./area_attack.md))
+
+Any starting byte other than 0 or 1 results in an ingame message. For example, 'abc' and '\x01abc' both result in the bytes 'abc' being transmitted to the game. The sole way to communicate a null byte as data to the game is the message '\x01\x00'.
+
 - ForceLeave ('\x00', null byte)
-    - The player is returned to the lobby
+
+The player is returned to the lobby.
 
 Messages passed from the server to the client takes one of these forms while the user is in the lobby:
 
