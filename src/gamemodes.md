@@ -18,6 +18,9 @@ Two players on separate boards play against each earn score. When a player fails
 game ends for them and they must wait until the other player finishes. The player with the highest
 score wins.
 
+* [**Number Guess**](./number_guess.md) (for Sam)
+Guess the number.
+
 ## Experimental (not in version 1):
 
 * **Enemy setup**
