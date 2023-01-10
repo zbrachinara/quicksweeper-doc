@@ -63,4 +63,16 @@ We might want to add an option for users to reconnect after losing connection.
 
 
 Typical join process:
-Client connects to the server, sends the websocket handshake, and receives a reply. The client sends the player name to log in - for example, "Caleb". The client sends the one-byte message "g", and the server replies with a list of games as newline-separated strings - for example, "Test 1\nMinesweep 5\nNumber Guess". The client sends a join message , consisting of the single byte 'j' followed by the game name - for example, "jMinesweep 5". The client is now connected to the game.  Messages will be sent between the game and client - see communication in (./area_attack.md).  When the player is ready to leave the game, it sends the single-byte message '\x00'. The player will be removed from the game and the join process may be repeated.
+Client connects to the server, sends the websocket handshake, and receives a reply. The client sends
+the player name to log in - for example, `Caleb`. The client sends the one-byte message `g`, and the
+server replies with a list of games as newline-separated strings - for example:
+
+```
+Test 1\nMinesweep 5\nNumber Guess
+```
+
+The client sends a join message , consisting of the single byte `j` followed by the game name - for
+example, `jMinesweep 5`. The client is now connected to the game.  Messages will be sent between the
+game and client - see communication in (./area_attack.md).  When the player is ready to leave the
+game, it sends the single-byte message `\x00`, which the server will respond to by closing the
+connection.

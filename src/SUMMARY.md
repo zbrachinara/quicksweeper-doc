@@ -13,6 +13,7 @@
     - [Classic singleplayer](./singleplayer.md)
     - [Area attack](./area_attack.md)
     - [Score attack](./score_attack.md)
+    - [Number guessing](./number_guess.md)
 
 # Art
 

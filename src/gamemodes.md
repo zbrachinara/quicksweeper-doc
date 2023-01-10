@@ -21,7 +21,7 @@ score wins.
 * [**Number Guess**](./number_guess.md) (for Sam)
 Guess the number.
 
-## Experimental (not in version 1):
+## Experimental (Not to be implemented in version 1):
 
 * **Enemy setup**
 
@@ -37,6 +37,7 @@ when a player selects a single mine, their game ends, and their area becomes unc
 
 
 * **Capture the Flag**
+
 Two or more teams each have a flag. The goal of the game is to collect all flags. Play proceeds as in stage 2 of area attack: activating a mine causes neighboring squares to reset. When a flag is in a team's territory, that team may move the flag to a neighboring square. This acts as if a mine was activated. To move the flag again, the team must reclaim the area surrounding the flag.
 
 
@@ -50,6 +51,7 @@ Cells with mines can be weighted variably, so that even if one cell has one neig
 containing mines, it may contain multiple mines.
 
 * **Continuous Mines**
+
 The board is a subset of R^2 instead of Z^2. Mines are disks of radius 1. Mines either can't overlap, or can (stacked mines). Guesses are points. Guessing inside of a mine is a loss. For guesses outside of a mine, the total area of mines enclosed in the disk of radius 1 surrounding the point is returned.
 
 * **Tunneling mines (or: whack-a-mine)**
@@ -60,7 +62,9 @@ cell, nor to a cell directly adjacent to an uncovered cell. A flagged mine won't
 mines to win.
 
 * **3D**
+
 The board has three (or more dimensions)
 
 * **Arbitrary graph**
+
 Mines are placed at vertices of a graph. Guesses are vertices. Guessing a mine results in a loss. Guessing a non-mine reveals the number of mines connected to that vertex.
