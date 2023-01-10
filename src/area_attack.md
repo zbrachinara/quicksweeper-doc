@@ -57,7 +57,7 @@ To accomodate for different skill levels, however, the total amount of area clai
 advance the game state.  While the game will end no matter what when the timer runs out, the game
 can also end before if the entire board is clear. 
 
-### Stage 1: Default mechanics
+### Stage 1: Opening
 
 Players begin claiming area without restrictions. When a player uncovers a mine, they are penalized
 by being frozen for some time. In this time, the player is not given any new information about the
@@ -75,6 +75,7 @@ attack. Lack of freezing should encourage the use of this mechanic as well.
 In addition, players will no longer be able to clear mines everywhere, instead only being able to
 clear cells that are adjacent to the player's area.
 
-### Stage 3: The final stage: Lock (after 6 minutes)
+### Stage 3: Lockout (after 6 minutes, lasting one minute)
 
-All previous effects apply, and after a minute the game ends and placement is determined. 
+In this stage, hitting a mine will result in an elimination. When a player is eliminated, it becomes
+a spectator and can no longer interact with the game, although it will remain connected.
