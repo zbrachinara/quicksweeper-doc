@@ -23,6 +23,12 @@ Guess the number.
 
 ## Experimental (Not to be implemented in version 1):
 
+
+* **Disconnected Territory**
+
+The game starts with many scattered squares revealed to the players. When a player selects a square, if it is not a mine, they own that square but do not see the number. A different square is revealed to that player.
+
+
 * **Enemy setup**
 
 Each player determines the placement of mines for the board of one other player. Once all the
